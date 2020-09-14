@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Hello World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="stylesheet" href="/wasm/static/static/main.css?version=0.0.39">
+</head>
+
+<body>
+    <h1>Wasm Compute Hello world application</h1>
+
+    <p>
+        Hello to wasmcompute hello world demo page, here we show some of the
+        capabilities of the framework. Though this is just a start, we plan on
+        building what is offered here.
+    </p>
+
+    <h2>Last 5 User Requests From Cache</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <td rowspan="5">Responses</td>
+            </tr>
+            <tr>
+                <td>Duration</td>
+                <td>User IP</td>
+                <td>Method</td>
+                <td>Path Visited</td>
+                <td>Response Status</td>
+            </tr>
+            <thead>
+            <tbody>
+                {{CACHE_RESPONSES}}
+            </tbody>
+    </table>
+
+    <h2>Last 50 User Requests From Database</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <td rowspan="5">Responses</td>
+            </tr>
+            <tr>
+                <td>Duration</td>
+                <td>User IP</td>
+                <td>Method</td>
+                <td>Path Visited</td>
+                <td>Response Status</td>
+            </tr>
+        </thead>
+        <tbody>
+            {{DATABASE_RESPONSES}}
+        </tbody>
+    </table>
+</body>
+
+</html>

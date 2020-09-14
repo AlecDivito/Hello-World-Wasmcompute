@@ -1,0 +1,12 @@
+---
+account: alecdivito
+application: helloworld
+static_file_base_url: /static
+readme: README.md
+migrations:
+  - "./migrations/init.sql"
+  - "./migrations/user_log.sql"
+static_files:
+  - "./static/main.css"
+template_files:
+  - "./templates/index.html"
